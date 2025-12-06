@@ -18,7 +18,11 @@
             </div>
             <div class="form__group-content">
                 <input class="form__group-content__input" type="text" name="name" placeholder="テスト太郎" value="{{ old('name') }}">
-                <div class="form__error">エラー</div>
+                <div class="form__error">
+                    @error('name')
+                    {{ $message }}
+                    @enderror
+                </div>
             </div>
         </div>
         <div class="form__group">
@@ -27,8 +31,12 @@
                 <span class="form__label--required">必須</span>
             </div>
             <div class="form__group-content">
-                <input class="form__group-content__input" type="mail" name="mail" placeholder="test@example.com" value="{{ old('mail') }}">
-                <div class="form__error">エラー</div>
+                <input class="form__group-content__input" type="mail" name="email" placeholder="test@example.com" value="{{ old('email') }}">
+                <div class="form__error">
+                    @error('email')
+                    {{ $message }}
+                    @enderror
+                </div>
             </div>
         </div>
         <div class="form__group">
@@ -38,7 +46,11 @@
             </div>
             <div class="form__group-content">
                 <input class="form__group-content__input" type="tel" name="tel" placeholder="09012345678" value="{{ old('tel') }}">
-                <div class="form__error">エラー</div>
+                <div class="form__error">
+                    @error('tel')
+                    {{ $message }}
+                    @enderror
+                </div>
             </div>
         </div>
         <div class="form__group">
