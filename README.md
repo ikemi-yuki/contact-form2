@@ -6,7 +6,7 @@
 
 ## 環境構築
 
-####リポジトリをクローン
+#### リポジトリをクローン
 
 ```
 git clone git@github.com:ikemi-yuki/contact-form2.git
@@ -60,13 +60,13 @@ php artisan migrate
 
 ## 使用技術（実行環境）
 
-フレームワーク：Laravel
+フレームワーク：Laravel:8.83.8
 
 言語：HTML CSS PHP
 
-Webサーバー：Nginx
+Webサーバー：Nginx:1.21.1
 
-データベース：MySQL
+データベース：MySQL:8.0.26
 
 ## ER図
 
